@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.anaformController">
+   <children>
+      <Pane prefHeight="75.0" prefWidth="500.0" style="-fx-background-color: #00b894;" AnchorPane.bottomAnchor="674.8" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="82.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/sbLogoKırmızı.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="70.0" layoutX="251.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8_account_96px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="kapat" layoutX="432.0" layoutY="25.0" minWidth="53.0" mnemonicParsing="false" onAction="#kapat_click" prefHeight="26.0" prefWidth="53.0" style="-fx-background-color: #dfe6e9;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_close_240px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="sifredegistir" layoutX="282.0" layoutY="8.0" minHeight="20.0" mnemonicParsing="false" onAction="#sifredegistir_click" prefHeight="35.0" prefWidth="137.0" style="-fx-background-color: trasnparent;" text="Şifre Değiştir" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btncikis" layoutX="305.0" layoutY="36.0" mnemonicParsing="false" onAction="#btncikis_click" style="-fx-background-color: transparent;" text="Hesaptan Çıkış" textFill="#fff5f5" />
+            <Button fx:id="gerigit" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#gerigit_click" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_go_back_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="143.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RANDEVU" textAlignment="CENTER" wrappingWidth="97.0">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="75.0" prefHeight="678.0" prefWidth="500.0" style="-fx-background-color: #bdc3c7;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <Label layoutX="25.0" layoutY="143.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="#ff1800" />
+            <Label layoutX="44.0" layoutY="210.0" prefHeight="17.0" prefWidth="43.0" text="İlçe:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="276.0" prefHeight="17.0" prefWidth="43.0" text="Klinik:" textFill="#1e1e1e">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="339.0" prefHeight="20.0" prefWidth="60.0" text="Hastane:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="414.0" prefHeight="20.0" prefWidth="111.0" text="Muayene Yeri:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="477.0" prefHeight="20.0" prefWidth="54.0" text="Hekim:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="klinik" layoutX="27.0" layoutY="296.0" prefHeight="25.0" prefWidth="445.0" />
+            <ComboBox fx:id="hastane" layoutX="28.0" layoutY="360.0" prefHeight="25.0" prefWidth="445.0" />
+            <ComboBox fx:id="muayeneyeri" layoutX="27.0" layoutY="434.0" prefHeight="25.0" prefWidth="445.0" />
+            <ComboBox fx:id="hekim" layoutX="27.0" layoutY="502.0" prefHeight="25.0" prefWidth="445.0" />
+            <ComboBox fx:id="ilce" layoutX="28.0" layoutY="230.0" prefHeight="25.0" prefWidth="445.0" />
+            <Label layoutX="35.0" layoutY="141.0" text="İl:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="212.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="RED" />
+            <Label layoutX="34.0" layoutY="278.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="RED" />
+            <Label layoutX="31.0" layoutY="341.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="RED" />
+            <Label layoutX="32.0" layoutY="416.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="RED" />
+            <Label layoutX="31.0" layoutY="479.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="RED" />
+            <DatePicker fx:id="date" layoutX="201.0" layoutY="574.0" />
+            <Label layoutX="204.0" layoutY="554.0" text="Tarih:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="546.0" text="Saat:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="198.0" layoutY="556.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="RED" />
+            <Spinner fx:id="spin1" layoutX="28.0" layoutY="569.0" prefHeight="25.0" prefWidth="54.0" />
+            <Spinner fx:id="spin2" layoutX="103.0" layoutY="569.0" prefHeight="25.0" prefWidth="54.0" />
+            <Label layoutX="91.0" layoutY="564.0" prefHeight="35.0" prefWidth="12.0" text=":">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="546.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="RED" />
+            <Button fx:id="randevuAl" layoutX="389.0" layoutY="569.0" mnemonicParsing="false" onAction="#randevuAlClick" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: red;" text="RANDEVU AL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <AnchorPane layoutX="27.0" layoutY="161.0">
+               <children>
+                  <ComboBox fx:id="il" onAction="#il_click" prefHeight="25.0" prefWidth="445.0" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="90.0" fitWidth="194.0" layoutX="152.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Ekran%20Görüntüsü%20(102).png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="375.8999938964844" layoutY="44.900001525878906" />
+            <TextField fx:id="tc" layoutX="187.0" layoutY="116.0" prefHeight="17.0" prefWidth="143.0" promptText="11 Haneli TC no..." style="-fx-background-color: #fff;">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </TextField>
+            <Label layoutX="165.0" layoutY="122.0" text="TC:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="157.0" layoutY="122.0" text="*" textFill="#cc0f0f" />
+            <Label layoutX="19.0" layoutY="652.0" text="Doldurulması zorunlu alan" />
+            <Label fx:id="label" layoutX="233.0" layoutY="633.0" prefHeight="28.0" prefWidth="179.0" textFill="#28b715">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="652.0" text="*" textFill="#d42e2e" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

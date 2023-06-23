@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.girissayfaController">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="850.0" style="-fx-background-color: #00b894;" AnchorPane.bottomAnchor="633.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="74.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/sbLogoKırmızı.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="randevu" layoutX="577.0" layoutY="12.0" mnemonicParsing="false" onAction="#randevu_click" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: red;" text="RANDEVU AL" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="kapat" layoutX="785.0" layoutY="21.0" mnemonicParsing="false" onAction="#kapat_click" prefHeight="24.0" prefWidth="17.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_close_240px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="135.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAĞLIK HİZMETLERİNE HOŞGELDİNİZ" textAlignment="CENTER" wrappingWidth="328.0">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="63.0" prefHeight="637.0" prefWidth="850.0" style="-fx-background-color: #bdc3c7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="529.0" layoutY="35.0" />
+            <MediaView fx:id="mediaview" fitHeight="300.0" fitWidth="400.0" layoutY="35.0" />
+            <Pane layoutY="239.0" prefHeight="48.0" prefWidth="400.0" style="-fx-background-color: black;">
+               <children>
+                  <Button fx:id="retry" layoutX="67.0" layoutY="7.0" mnemonicParsing="false" onAction="#retrymedia" prefHeight="26.0" prefWidth="28.0" style="-fx-border-color: orange; -fx-background-color: white;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/icons8_restart_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="pause" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#pausemedia" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white; -fx-border-color: orange;">
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/icons8_pause_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="play" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#playmedia" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white; -fx-border-color: orange;">
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/icons8_play_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Text fill="RED" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SİGARAYI BIRAK HAYATI BIRAKMA!">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label layoutX="539.0" layoutY="45.0" />
+            <TextArea layoutX="36.0" layoutY="466.0" prefHeight="137.0" prefWidth="409.0" style="-fx-border-radius: 15;" text="1-Randevu Al tuşuna basınız.&#10;2-Giriş yapınız.Kayıtlı degilseniz kayıt olup giriş yapınız.&#10;3-Açılan ekranda Randevu Al tuşuna basınız.&#10;4-Açılan ekranda Hastane,Klinik,Doktor yerleri doldurunuz.&#10;5-Randevunuzu Onaylayınız." />
+            <Label layoutX="36.0" layoutY="431.0" text="Randevu Nasıl Alınır?" textFill="#fc0303">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Pane fx:id="antibiyotikp" layoutX="445.0" layoutY="14.0" prefHeight="323.0" prefWidth="383.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="96.0" layoutX="41.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/indir.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="128.0" layoutY="18.0" text="Antiyotike Bir Bakış" textFill="#fc0303">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea layoutX="41.0" layoutY="65.0" prefHeight="258.0" prefWidth="328.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="&#10;       Amerika’da yayınlanan “Newsweek” dergisi,18 Ekim &#10;        2013 tarihli kapak sayfasında antibiyotiklerin aşırı &#10;        kullanımına bağlı olarak tedavi edilemeyen süper &#10;        mikropların dünya genelinde yayılmaya &#10;         başladığına değinerek&#10;          “İlaçlar İşe Yaramıyor” başlığını kullanmıştır.&#10;&#10;       CDC’nin (U.S. Centers for Disease Control and &#10;      Prevention) yaptığı açıklamaya göre, Amerika’da&#10;        her yıl 2 milyondan fazla insan en güvenli ve etkili &#10;        antibiyotikleri kapsayan geniş spektrumlu direnç &#10;        taşıyan bakterilerle enfekte olmakta ve bu hastaların &#10;         en az23 bini hayatını kaybetmektedir." />
+                  <Button fx:id="btn2" layoutY="120.0" mnemonicParsing="false" onAction="#btn2_click" prefHeight="84.0" prefWidth="29.0" text="&lt;">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="elyıkamap" layoutX="445.0" layoutY="20.0" prefHeight="312.0" prefWidth="383.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="110.0" layoutY="18.0" text="ELLER NASIL YIKANMALI?" textFill="#f70000">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="48.0" fitWidth="114.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/images.jpeg" />
+                     </image>
+                  </ImageView>
+                  <TextArea layoutX="12.0" layoutY="60.0" prefHeight="248.0" prefWidth="328.0" style="-fx-background-color: #81ecec;" text="&#10;    Elleri temizlemek amacıyla uygulanan doğru teknik. &#10;     Şu aşamalardan oluşur:&#10;     1. El yıkama öncesinde yüzük, saat gibi &#10;            aksesuarlar çıkarılır.&#10;      2. Akan su altında eller ıslatılır.&#10;      3. Bilekler, avuç içi, ellerin sırt ve parmak&#10;            araları ile  tırnakların kenar ve uçları&#10;            sabun ile köpürtülerek en az 20 saniye&#10;            süreyle kuvvetlice ovuşturulur. &#10;      4. Eller su altında iyice durulanır. &#10;      5. Eller bileklerden başlayarak kâğıt havlu ile kurulanır.&#10;      6. Aynı kâğıt havlu ile musluk kapatılır.&#10;" />
+                  <Button fx:id="btn1" layoutX="355.0" layoutY="134.0" mnemonicParsing="false" onAction="#btn1_click" prefHeight="84.0" prefWidth="28.0" text="&gt;">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <TextArea layoutX="523.0" layoutY="470.0" prefHeight="130.0" prefWidth="158.0" text="Randevunuza &#10;15 dakika &#10;önceden &#10;gelmeye &#10;dikkat ediniz..." />
+            <ImageView fitHeight="74.0" fitWidth="48.0" layoutX="619.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8_box_important_96px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

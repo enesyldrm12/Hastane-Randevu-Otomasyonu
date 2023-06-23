@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.girisController">
+   <children>
+      <AnchorPane layoutX="146.0" layoutY="239.0" maxHeight="79.0" maxWidth="550.0" minHeight="79.0" minWidth="550.0" prefHeight="79.0" prefWidth="550.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="-3.0" prefHeight="79.0" prefWidth="554.0" style="-fx-background-color: #00b894;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="WHITE" layoutX="203.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOŞ GELDİNİZ..." wrappingWidth="210.13672637939453">
+                     <font>
+                        <Font name="Dubai Medium" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnkapat" layoutX="498.0" layoutY="28.0" mnemonicParsing="false" onAction="#btnkapat_click" prefHeight="24.0" prefWidth="17.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/icons8_close_240px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="54.0" fitWidth="64.0" layoutX="128.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/sbLogoKırmızı.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="geri" layoutX="33.0" layoutY="26.0" mnemonicParsing="false" onAction="#geri_click" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/icons8_go_back_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="58.0" maxHeight="523.0" maxWidth="554.0" minHeight="523.0" minWidth="554.0" prefHeight="523.0" prefWidth="554.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-4.399999999999977" AnchorPane.topAnchor="76.79999999999995">
+         <children>
+            <Pane focusTraversable="true" layoutX="14.0" prefHeight="523.0" prefWidth="554.0" style="-fx-background-color: #bdc3c7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <TextField fx:id="tcgiris" layoutX="153.0" layoutY="209.0" prefHeight="32.0" prefWidth="229.0" promptText="11 haneli TC kimlik no" />
+                  <TextField fx:id="sifre" layoutX="153.0" layoutY="270.0" prefHeight="32.0" prefWidth="229.0" promptText="Şifrenizi Girin..." />
+                  <Button fx:id="btngiris" layoutX="213.0" layoutY="328.0" mnemonicParsing="false" onAction="#btngiris_click" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: red;" styleClass="background" text="GİRİŞ" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnsifreunut" layoutX="108.0" layoutY="396.0" mnemonicParsing="false" onAction="#btnsifreunut_click" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Sifremi Unuttum" textFill="#e40505">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnkayit" layoutX="306.0" layoutY="396.0" mnemonicParsing="false" onAction="#btnkayit_click" style="-fx-background-color: transparent;" text="Kayıt Ol" textFill="#e40505">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="484.0" layoutX="71.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/mhrspopupjpg.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="49.0" layoutX="122.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_account_96px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" layoutX="124.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_lock_96px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
